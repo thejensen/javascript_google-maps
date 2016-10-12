@@ -1,0 +1,12 @@
+--when you clone an existing repo with node modules set up with a gulpfile.js, run npm install to install all packages in it.
+$ npm install
+--same with bower's frontend dependencies (make sure these include bower install jquery --save, bower install moment --save and bower install bootstrap --save, UGH)
+$ bower install
+--to get your build folders back, run gulp build
+$ gulp build
+--finally serve up your business to the brower with gulp serve
+$ gulp serve
+
+
+--whenever you add a new dependency to your gulpfile.js, run gulp jsBuild
+$ gulp jsBuild
