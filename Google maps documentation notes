@@ -1,0 +1,27 @@
+Multiple libraries may be specified as a comma-separated list. Once loaded, libraries are accessed via the google.maps.libraryName namespace.
+https://developers.google.com/maps/documentation/javascript/libraries
+
+Map Options:
+map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: -34.397, lng: 150.644},
+  zoom: 8
+});
+https://developers.google.com/maps/documentation/javascript/tutorial
+
+zoom level:
+1: World
+5: Landmass/continent
+10: City
+15: Streets
+20: Buildings
+
+map = new google.maps.Map(document.getElementById("map"), {...});
+
+-Constructor
+Map(mapDiv:Node, opts?:MapOptions )
+-Description
+Creates a new map inside of the given HTML container — which is typically a DIV element — using any (optional) parameters that are passed.
+https://developers.google.com/maps/documentation/javascript/tutorial
+
+Trouble shooting video
+https://youtu.be/21PDd17dnnI

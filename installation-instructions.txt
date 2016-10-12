@@ -2,7 +2,7 @@
 $ npm install
 --same with bower's frontend dependencies (make sure these include bower install jquery --save, bower install moment --save and bower install bootstrap --save, UGH)
 $ bower install
---to get your build folders back, run gulp build
+--to get your build folders back, INCLUDING APP.JS, run gulp build
 $ gulp build
 --finally serve up your business to the brower with gulp serve
 $ gulp serve

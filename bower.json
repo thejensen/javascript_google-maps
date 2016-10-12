@@ -3,7 +3,7 @@
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://github.com/thejensen/javascript_ping-pong-example",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",

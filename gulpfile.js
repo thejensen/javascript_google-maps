@@ -114,6 +114,10 @@ gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
 gulp.task('bowerBuild', ['bower'], function(){
   browserSync.reload();
 });
+
+gulp.task('htmlBuild', function() {
+  browserSync.reload();
+});
 // end tasks related to serve
 
 gulp.task('cssBuild', function() {

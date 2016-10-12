@@ -4,6 +4,8 @@
   <link rel="stylesheet" href="build/css/vendor.css">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCZQT6CgUj5K4hw7BryWHZexsKS7NYGNDo"></script>
+  <link rel="stylesheet" href="build/css/styles.css">
   <title>Map App</title>
 </head>
   <body>
@@ -11,13 +13,14 @@
       <h1>Google Map!</h1>
       <form id="map-address">
         <div class="form-group">
-          <label for="address">Enter your address:</label>
-          <input id="address" type="text">
+          <label for="lat">Enter your latitutude:</label>
+          <input id="lat" type="text">
+          <label for="long">Enter your longitude:</label>
+          <input id="long" type="text">
           <button class="btn-success" type="submit">Submit</button>
         </div>
       </form>
-    </div>
-    <div id="map">
+      <div id="map"></div>
     </div>
   </body>
 </html>
