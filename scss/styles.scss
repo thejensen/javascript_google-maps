@@ -6,11 +6,15 @@
 //     bottom: 0;
 // }
 
-html, body, .container {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
+
+.container {
+  height: 100%;
+}
 
 #map {
   height: 100%;

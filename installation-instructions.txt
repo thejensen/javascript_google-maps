@@ -4,6 +4,7 @@ $ npm install
 $ bower install
 --to get your build folders back, INCLUDING APP.JS, run gulp build
 $ gulp build
+--any files that you don't commit to git like .env and build files (see above), then rebuild them if you're on a new machine.
 --finally serve up your business to the brower with gulp serve
 $ gulp serve
 
