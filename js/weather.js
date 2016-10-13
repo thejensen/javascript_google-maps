@@ -1,15 +1,12 @@
 var weatherApiKey = require('./../.env').weatherApiKey;
 
 Weather = function(){
-  sunriseTime = "";
-  sunsetTime = "";
 };
 
-Weather.prototype.getWeather = function(lat, long) {
+Weather.prototype.getWeather = function(lat, long, callback) {
   $.get('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=' + weatherApiKey).then(function(response){
     $('#weather').text("The humidity in " + response.name + " is " + response.main.humidity + "%");
-    this.sunriseTime = response.sys.sunrise;
-    this.sunsetTime = response.sys.sunset;
+    callback(response.sys.sunrise);
   }).fail(function(error) {
     $('#weather').text(error.responseJSON.message);
   });
