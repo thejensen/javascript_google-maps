@@ -13,9 +13,10 @@ $(document).ready(function() {
     var long = parseFloat($('#long').val());
     currentMapObject.initMap(lat, long);
     $('#map').append(map);
-    currentWeatherObject.getWeather(lat, long, function(sunrise){
-      console.log(sunrise);
+
+    currentWeatherObject.getWeather(lat, long, function(sunrise) {
       currentTimeZoneObject.getOffset(lat, long, sunrise);
     });
+
   });
 });
