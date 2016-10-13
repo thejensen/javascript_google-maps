@@ -13,7 +13,6 @@ OurMap.prototype.initMap = function(lat, long) {
     };
 
     var map = new google.maps.Map(document.getElementById('map'), options);
-    console.log(map);
 
     new google.maps.Marker({
       map: map,
