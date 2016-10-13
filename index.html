@@ -4,22 +4,30 @@
   <link rel="stylesheet" href="build/css/vendor.css">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCZQT6CgUj5K4hw7BryWHZexsKS7NYGNDo"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?&libraries=geometry,places"></script>
   <link rel="stylesheet" href="build/css/styles.css">
   <title>Map App</title>
 </head>
   <body>
     <div class="container">
       <h1>Google Map!</h1>
+      <p>Plot a point anywhere in the world! Follow these rules and you will go far:</p>
+      <ul>
+        <li>Enter a latitude between -90 (or 90 degrees west) and 90 (or 90 degrees east)</li>
+        <li>Enter a longitude between -90 (or 90 degrees south) and 90 (or 90 degrees north)</li>
+      </ul>
       <form id="map-address">
         <div class="form-group">
           <label for="lat">Enter your latitutude:</label>
-          <input id="lat" type="text">
+          <input id="lat" type="number" step="any" required>
           <label for="long">Enter your longitude:</label>
-          <input id="long" type="text">
+          <input id="long" type="number" step="any" required>
           <button class="btn-success" type="submit">Submit</button>
         </div>
       </form>
+      <div id="weather"></div>
+      <div id="sunrise"></div>
+      <div id="sunset"></div>
       <div id="map"></div>
     </div>
   </body>

@@ -5,8 +5,8 @@ $(document).ready(function() {
 
   $('#map-address').submit(function(event){
     event.preventDefault();
-    var lat = $('#lat').val();
-    var long = $('#long').val();
+    var lat = parseFloat($('#lat').val());
+    var long = parseFloat($('#long').val());
     currentMapObject.initMap(lat, long);
     $('#map').append(map);
   });
